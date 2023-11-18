@@ -1,0 +1,576 @@
+/* Start Header */
+header nav{
+    height: 80px;
+    z-index: 500;
+    opacity: 0.9;
+}
+.container-fluid .word{
+    border-right:1px solid #ccc; 
+    padding-right: 10px;
+    font-weight: bold;
+}
+.navbar-brand{
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 5px 5px 20px rgb(87, 179, 204), -5px -5px 20px rgb(87, 179, 204);
+}
+.nav-link{
+    transition: 0.5s ease-in-out;
+}
+.nav-link:hover {
+    font-weight: bolder;
+    text-shadow: 5px 5px 20px rgb(87, 179, 204), -5px -5px 20px rgb(87, 179, 204);
+}
+.nav-item .text-info{
+    transition: 0.3s;
+}
+.nav-item .text-info:hover::first-letter{
+    color: #04515f;
+    font-size: 20px;
+}
+.trips-border{
+    border: 1px solid #00dbde;
+}
+/* End Header */
+
+/* Start aside */
+.aside-icon {
+    width: 60px;
+    height: 60px;
+}
+.aside-icon a {
+    text-decoration: none;
+    color: rgb(0, 7, 46);
+}
+.aside-icon a i {
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+}
+/* End aside */
+
+/* Start Slider */
+.slider .carousel-item{
+    height: 100vh;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(86, 184, 190, 0.5);
+    border-radius: 10px;
+}
+/* End Slider */
+
+/* Start About */
+.cards .title{
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+.bradcam-area {
+    background-image: url(../images/bradcam3.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 175px 0;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+.bradcam-area::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #040E27;
+    opacity: .1;
+    z-index: -1;
+    content: '';
+}
+.bradcam-area h3 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 90px;
+    text-transform: capitalize;
+    font-family: "Nothing You Could Do", cursive;
+}
+.bradcam-area p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/* End About */
+
+/* Start Section Cards */
+.p-info{
+    background-color: cadetblue;
+}
+.accordion .accordion-item .accordion-header button{
+    background: linear-gradient(180deg, #fc00ff, #00dbde);
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+    border: 0;
+}
+.translate-info{
+    background-color: rgb(158, 217, 219);
+    border-radius: 0;
+}
+.translate-info .card-body h4 a{
+    text-decoration: none;
+    color: #04515f;
+    font-size: 18px;
+}
+/* End Section Cards */
+
+.fixed-img1{
+    background-image: url(../images/statues.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+
+/* Start Tours */
+.popular-places{
+    background-color: rgb(144, 221, 247);
+}
+.popular-places .title{
+    font-size: 40px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(90deg,#0eabad,#fc00ff);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-img-top {
+    height: 380px;
+}
+.cardover {
+    position: relative;
+    min-height: 450px;
+}
+.cardover .btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 58px;
+    right: 13px;
+}
+.heading-title{
+    font-size: 18px;
+}
+.cardover::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #04515f;
+    opacity: 0.2;
+    transition: 1s;
+}
+.cardover::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #04515f;
+    opacity: 0.2;
+    transition: 1s;
+}
+.cardover:hover::before,
+.cardover:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/* End Tours */
+
+.fixed-img2{
+    background-image: url(../images/aswan-place.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+}
+
+/* Start Thanks Card */
+.wrapper{
+    margin: 5vh;
+}
+.wrapper .container{
+    width: 100%;
+    min-height: 500px;
+}
+.thankcard{
+    border: none;
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+.card.card-has-bg {
+    transition: all 0.5s;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.card.card-has-bg:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+    background-size: 130%;
+    transition: all 0.5s;
+}
+.card.card-has-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: grayscale(1);
+}
+.wrapper .card-body .card-title{
+    font-size: 23px;
+}
+.wrapper .card-body .card-title a{
+    text-decoration: none;
+}
+.card-hover:hover{
+    cursor: pointer;
+}
+.card-hover .card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.8s;
+    background: #234f6d;
+    background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, #455f71 100%);
+}
+.card .card-body{
+    flex: 1 1 auto;
+}
+.card-hover:hover .card-body{
+    margin-top: 20px;
+    transition: all 0.8s;
+}
+.card .card-footer {
+    background: none;
+    border-top: none;
+}
+.card .card-footer .media img {
+    width: 100px;
+    height: 120px;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+}
+/* End Thanks Card */
+
+/* Start Egypt News */
+.news .title{
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+.postcard{
+    height: 350px;
+    flex-wrap: wrap;
+    display: flex;
+    /* box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66); */
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+}
+.postcard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+}
+@media (min-width: 769px){
+    .postcard:nth-child(2n+0) {
+        flex-direction: row-reverse;
+    }
+    .postcard {
+        flex-wrap: inherit;
+    }
+}
+@media (min-width: 769px){
+    .blue:nth-child(2n)::before {
+        background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+    }
+    .yellow:nth-child(2n+1)::before {
+        background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+    }
+    .postcard-text::before {
+        right: -12px;
+        transform: rotate(-4deg);
+    }
+}
+
+@media (min-width: 769px){
+    .postcard:nth-child(2n+1) .postcard-text::before {
+        left: -12px;
+        transform: rotate(4deg);
+    }
+}
+.postcard.light{
+    background-color: #e1e5ea;
+}
+.postcard .postcard-img-link{
+    display: contents;
+}
+.postcard .postcard-img{
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+@media (min-width: 769px){
+    .postcard .postcard-img {
+        max-width: 300px;
+        max-height: 100%;
+        transition: 0.3s ease;
+    }
+}
+.postcard .postcard-text{
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 1024px){
+    .postcard-text:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: -20%;
+        height: 130%;
+        width: 55px;
+    }
+}
+@media (min-width: 769px){
+    .postcard .postcard-text {
+        padding: 3rem;
+        width: 100%;
+    }
+}
+.postcard-tagbox a {
+    text-decoration: none;
+    color: #04515f;
+}
+.postcard .t-dark{
+    color: #18151f;
+}
+.postcard h2{
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.postcard-title a{
+    text-decoration: none;
+    color: #04515f;
+}
+.postcard .small{
+    font-size: 80%;
+}
+.blue .postcard-bar{
+    background-color: #04515f;
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.yellow .postcard-bar {
+    background-color: darkgoldenrod;
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.blue:hover .postcard-bar{
+    width: 100px;
+}
+.yellow:hover .postcard-bar{
+    width: 100px;
+}
+.blue:hover .postcard-img,
+.yellow:hover .postcard-img{
+    transform: scale(1.1);
+}
+.postcard .postcard-preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+}
+.postcard .postcard-tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    justify-content: center;
+}
+.postcard-tagbox .tag-item:hover:not(:last-child){
+    background-color: #04515f;
+    color: #fff;
+}
+.postcard-tagbox .play:hover{
+    opacity: 0.9;
+}
+@media (min-width: 769px){
+    .postcard .postcard-tagbox {
+        justify-content: start;
+    }
+}
+.postcard-tagbox{
+    list-style: none;
+}
+.postcard .postcard-tagbox .tag-item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: 0.5s;
+}
+/* End Egypt News */
+
+/* Start Recent Trips */
+.recent-trip .title{
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+.single-trip .info .date{
+    margin-top: 10px;
+}
+.single-trip .info a{
+    text-decoration: none;
+}
+.single-trip .info .info-trips{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #293680;
+    transition: 0.3s;
+}
+.single-trip .info .info-trips:hover{
+    font-size: 21px;
+    color: #04515f;
+}
+/* End Recent Trips */
+
+/* Start Join Us */
+.title {
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+.logoicon {
+    height: 60px;
+    width: 60px;
+    box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+    border-radius: 50%;
+    transition: 1s;
+}
+.logoicon:hover {
+    background-color: #26b8bd;
+    opacity: 0.8;
+}
+.text-social{
+    text-decoration: none;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+.text-social:hover{
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 992px){
+    .travels{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .travels img{
+        width: 130px;
+        height: 50px;
+    }
+}
+@media (max-width: 567px){
+    .travels{
+        flex-direction: column;
+        align-items: center;
+    }
+    .travels img{
+        width: 150px;
+        height: 60px;
+    }
+}
+/* End Join Us */
+
+/* Start Footer */
+.underline{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddcdc;
+}
+.copyright{
+    background: -webkit-linear-gradient(90deg, rgb(9, 9, 201), #e51ce9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    transition: 0.3s;
+}
+/* End Footer */
