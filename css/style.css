@@ -130,6 +130,19 @@ header nav{
     transition: 0.4s;
     border: 0;
 }
+@media (max-width: 567px){
+    .accordion .accordion-item .accordion-header button{
+        background: linear-gradient(180deg, #fc00ff, #00dbde);
+        font-size: 20px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.4s;
+        border: 0;
+    }
+}
 .translate-info{
     background-color: rgb(158, 217, 219);
     border-radius: 0;
